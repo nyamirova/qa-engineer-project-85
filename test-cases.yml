@@ -81,8 +81,9 @@
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
     - Выбрать в Game Type параметр With a bot 
     - Нажать на Create battle
-    - Нажать на синий квадрат с троеточием 
-    - Нажать на Give Up и ещё раз нажать на кнопку Give Up
+    - Нажать на синий квадрат с троеточием в левой стороне экрана 
+    - Нажать на Give Up
+    - В открышемся окне нажать на Give Up
     - Получить на экране большое окно с плачущим динозавром или с сердцем, надписью If you read this you've lost the game и музыкальным сопровождением
   expected-result: |
     Звучит музыка согласно выбора пользователем звукового сопровождения в настройках в личном кабинете
@@ -200,7 +201,7 @@
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
     - Выбрать в Game Type параметр With a friend
     - Под надписью Choose opponent нажать на поле фильтра 
-    - Выбрать игрока 
+    - Выбрать любого игрока 
     - Нажать Create invite 
     - Ожидать отклика на приглашение от выбранного друга 
   expected-result: |
@@ -391,3 +392,131 @@
     - Выбрать Ru 
   expected-result: |
     Изменился язык на русский для условия задачи
+
+    
+- summary: |
+    Проверка выбора языка программирования 
+  requirement: |
+    Пользователь может выбрать язык программирования 
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Браузер Google Chrome
+  steps:
+    - Нажать Create a game 
+    - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Нажать на  With a bot  
+    - Нажать на Create battle 
+    - Нажать на Java 21 
+    - Выбрать любой язык программирования 
+  expected-result: |
+    Пользователь выбирает язык программирования 
+
+- summary: |
+    Проверка выбора тёмного фона 
+  requirement: |
+    Пользователь может выбрать тёмный фон 
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Браузер Google Chrome
+  steps:
+    - Нажать на Create a game 
+    - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Выбрать в Game Type With a bot 
+    - Нажать на кнопку Create battle в правом нижнем углу открывшегося окна
+    - Нажать на кнопку Dark на поле в левой стороне экрана
+  expected-result: |
+    Пользователь получает тёмный фон для ведения игры
+
+- summary: |
+    Проверка выбора светлого фона для ведения игры
+  requirement: |
+    Пользователь может выбрать светлый для ведения игры
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Браузер Google Chrome
+  steps:
+    - Нажать на Create a game 
+    - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Выбрать в Game Type параметр With a bot 
+    - Нажать на Create battle
+    - Нажать на Continue
+    - Нажать на значок в виде солнца в левой стороне экрана
+  expected-result: |
+    Изменился на светлый фон для ведения игры
+  
+- summary: |
+    Проверка функционирования кнопки Give Up
+  requirement: |
+    При корректной работе кнопки Give Up пользователь получает возможность досрочно завершить игру своим поражением
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Браузер Google Chrome
+  steps:
+    - Нажать на Create a game
+    - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Выбрать в Game Type параметр With a bot
+    - Нажать на Create battle
+    - Нажать на Continue
+    - Нажать на синий квадрат с троеточием в левой стороне экрана 
+    - Нажать на Give Up
+    - В открышемся окне нажать на Give Up
+    - Получить на экране большое окно с плачущим динозавром или с сердцем, надписью If you read this you've lost the game и музыкальным сопровождением
+  expected-result: |
+     Пользователь заканчивает игру своим поражением
+
+- summary: |
+    Проверка функционирования кнопки сброса решения Reset solution
+  requirement: |
+    Пользователь может сбросить своё решение Reset solution 
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Браузер Google Chrome
+  steps: 
+    - Нажать на Create a game 
+    - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Выбрать в Game Type параметр With a bot 
+    - Нажать на Create battle 
+    - Нажать на Continue
+    - Нажать на синий квадрат с троеточием в левой стороне экрана 
+    - Нажать на Reset solution
+  expected-result: |
+     У пользователя приисходит сброс решения  Reset solution 
+
+- summary: |
+    Проверка функционирования сайта на мобильных устройствах
+  requirement: |
+    Сайт должен фукнционировать на мобильных устройствах
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Мобильное устройство 
+  steps: 
+    - Нажать Create a game в правом верхнем углу
+    - В открывшемся окне выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Нажать на кнопку With a bot ниже надписи Game Type 
+    - Нажать на кнопку Create battle в правом нижнем углу открывшегося окна
+    - Начать новую игру
+  expected-result: |
+    Сайт корректно функционирует на мобильных устройствах
+
+- summary: |
+    Проверка на кроссбраузерность сайта
+  requirement: |
+    Сайт должен функционировать в последних версиях браузеров Google Chrome и Mozilla Firefox
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Браузер Google Chrome Версия 129.0.6668.59 (Официальная сборка), Браузер Mozilla Firefox Version 130.0
+  steps: 
+    - Нажать на кнопку Create a game в правом верхнем углу
+    - В открывшемся окне выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Нажать на кнопку With a bot ниже надписи Game Type 
+    - Нажать на кнопку Create battle в правом нижнем углу открывшегося окна
+    - Начать новую игру
+  expected-result: |
+    Сайт корректно функционирует в последних версиях браузеров Google Chrome и Mozilla Firefox

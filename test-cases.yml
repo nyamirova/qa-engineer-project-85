@@ -197,7 +197,7 @@
   test-data: |
     Браузер Google Chrome
   steps:
-    - Нажать на Create
+    - Нажать на Create a game
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
     - Выбрать в Game Type параметр With a friend
     - Под надписью Choose opponent нажать на поле фильтра 
@@ -488,7 +488,7 @@
      У пользователя приисходит сброс решения  Reset solution 
 
 - summary: |
-    Проверка функционирования сайта на мобильных устройствах
+    Проверка функционирования сайта на мобильном устройстве 
   requirement: |
     Сайт должен фукнционировать на мобильных устройствах
   prerequisites: |
@@ -496,13 +496,13 @@
   test-data: |
     Мобильное устройство 
   steps: 
-    - Нажать Create a game в правом верхнем углу
-    - В открывшемся окне выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
-    - Нажать на кнопку With a bot ниже надписи Game Type 
-    - Нажать на кнопку Create battle в правом нижнем углу открывшегося окна
-    - Начать новую игру
+    - Нажать на Create a game 
+    - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Выбрать в Game Type параметр With a bot 
+    - Нажать на Create battle
+    - Нажать на Continue
   expected-result: |
-    Сайт корректно функционирует на мобильных устройствах
+    Сайт корректно функционирует на мобильном устройстве
 
 - summary: |
     Проверка на кроссбраузерность сайта
@@ -513,10 +513,10 @@
   test-data: |
     Браузер Google Chrome Версия 129.0.6668.59 (Официальная сборка), Браузер Mozilla Firefox Version 130.0
   steps: 
-    - Нажать на кнопку Create a game в правом верхнем углу
-    - В открывшемся окне выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
-    - Нажать на кнопку With a bot ниже надписи Game Type 
-    - Нажать на кнопку Create battle в правом нижнем углу открывшегося окна
-    - Начать новую игру
+    - Нажать на Create a game  
+    - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
+    - Выбрать в Game Type параметр With a bot
+    - Нажать на Create battle 
+    - Нажать на Continue
   expected-result: |
     Сайт корректно функционирует в последних версиях браузеров Google Chrome и Mozilla Firefox

@@ -511,7 +511,7 @@
   prerequisites: |
     Пользователь находится на странице https://codebattle.hexlet.io/#lobby
   test-data: |
-    Браузер Google Chrome Версия 129.0.6668.59 (Официальная сборка), Браузер Mozilla Firefox Version 130.0
+    Браузер Google Chrome Версия 134.0.6998.88/89 (Официальная сборка), Браузер Mozilla Firefox 136.0.1
   steps: 
     - Нажать на Create a game  
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию

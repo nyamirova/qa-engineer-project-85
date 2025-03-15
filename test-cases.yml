@@ -9,10 +9,10 @@
     Логин = Nataliaa@yandex.ru Пароль = Hello!0903
     Браузер Google Chrome
   steps:
-    - Нажать на кнопку Sign in 
+    - Нажать на Sign in 
     - Ввести логин в поле Email 
     - Ввести пароль в поле Password
-    - Нажать на кнопку Submit
+    - Нажать на Submit
   expected-result: |
     Пользователь переходит на страницу своего профиля, в правом верхнем углу указан его ник
 
@@ -26,10 +26,10 @@
     Логин = Nataliaa@yandex Пароль = Hello!0903
     Браузер Google Chrome
   steps:
-    - Нажать на кнопку Sign in
+    - Нажать на Sign in
     - Ввести логин в поле Email
     - Ввести пароль в поле Password
-    - Нажать на кнопку Submit
+    - Нажать на Submit
   expected-result: |
     Пользователь получает сообщение об ошибке 
 
@@ -43,10 +43,10 @@
     Логин = Nataliaa@yandex.ru Пароль = Hello!
     Браузер Google Chrome
   steps:
-    - Нажать на кнопку Sign in 
+    - Нажать на Sign in 
     - Ввести логин в поле Email
     - Ввести пароль в поле Password
-    - Нажать на кнопку Submit
+    - Нажать на Submit
   expected-result: |
     Пользователь получает сообщение об ошибке
 
@@ -75,7 +75,7 @@
     - Нажать на свой логин 
     - Нажать на Settings 
     - Выбрать любой тип звука
-    - Нажать на кнопку Save
+    - Нажать на Save
     - Нажать на Hexlet Codebattle 
     - Нажать Create a game 
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
@@ -100,7 +100,7 @@
     - Нажать на Settings 
     - Нажать на поле под Your weapon
     - Выбрать оружие
-    - Нажать нf Save
+    - Нажать на Save
     - Нажать на Hexlet Codebattle 
     - Нажать на Create a game 
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
@@ -294,7 +294,7 @@
     Браузер Google Chrome
   steps:
     - Нажать на Create a game 
-    - Установить в Time Control время для решения задачи 
+    - Выбрать в Time control любое время 
     - Выбрать в Game Type параметр With a bot 
     - Нажать на Create battle 
   expected-result: |

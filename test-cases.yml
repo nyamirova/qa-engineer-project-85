@@ -100,12 +100,12 @@
     - Нажать на Settings 
     - Нажать на поле под Your weapon
     - Выбрать оружие
-    - Нажать на кнопку Save
+    - Нажать нf Save
     - Нажать на Hexlet Codebattle 
-    - Нажать на кнопку Create a game 
+    - Нажать на Create a game 
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
     - Выбрать в Game Type параметр With a bot 
-    - Нажать на кнопку Create battle 
+    - Нажать на Create battle 
   expected-result: |
     В новой игре пользователь получает выбранное ранее в настройках в личном кабинете оружие
 
@@ -165,7 +165,7 @@
     - Нажать на Create a game 
     - Выбрать параметры Level, Time control и Choose task by name or tags по умолчанию
     - Выбрать в Game Type параметр With a bot 
-    - Нажать на кнопку Create battle
+    - Нажать на Create battle
   expected-result: |
     Пользователь начинает новую игру с ботом
 
@@ -294,7 +294,7 @@
     Браузер Google Chrome
   steps:
     - Нажать на Create a game 
-    - Ниже надписи Time Control установить время для решения задачи 
+    - Установить в Time Control время для решения задачи 
     - Выбрать в Game Type параметр With a bot 
     - Нажать на Create battle 
   expected-result: |

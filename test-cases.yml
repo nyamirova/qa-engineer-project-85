@@ -1,5 +1,41 @@
 ---
 - summary: |
+    Проверка регистрации пользователя 
+  requirement: |
+    При вводе корректных данных, происходит регистрация пользователя 
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io
+  test-data: |
+    Браузер Google Chrome
+  steps:
+    - Нажать на Sign up 
+    - Ввести Nickname
+    - Ввести Email
+    - Ввести Password
+    - Повторно ввести тот же пароль в поле Password Confirmation 
+  expected-result: |
+    Пользователь успешно зарегистрировался (валидация пройдена), в правом верхнем углу указан его ник
+
+- summary: |
+    Проверка не успешной регистрации, при введении не корректных данных
+  requirement: |
+    При вводе не корректных данных, происходит ошибка  
+  prerequisites: |
+    Пользователь находится на странице https://codebattle.hexlet.io
+  test-data: |
+     Email - mynamirova
+     Password - Hello
+    Браузер Google Chrome
+  steps:
+    - Нажать на Sign up 
+    - Nickname оставить пустой 
+    - Ввести Email 
+    - Ввести Password 
+    - Password Confirmation оставить пустой 
+  expected-result: |
+    При не корректных введённых данных при регистрации валидация не пройдена
+
+- summary: |
     Проверка входа пользователя с существующими логином и паролем
   requirement: |
     При верном вводе логина и пароля пользователь должен войти  

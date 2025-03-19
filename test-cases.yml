@@ -41,7 +41,7 @@
   test-data: |
      Email - mynamirova
      Password - Hello
-    Браузер Google Chrome
+     Браузер Google Chrome
   steps:
     - Нажать на Sign up 
     - Nickname оставить пустой 

@@ -231,7 +231,7 @@
     Браузер Google Chrome
   steps:
     - Нажать на свой ник
-    - Нажать Tournaments
+    - Нажать на Tournaments
     - Прокрутить ниже до Create a new tournament
     - Нажать на Create
   expected-result: |
